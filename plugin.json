@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "onda",
+  "version": "1.0.0",
+  "description": "Read your Onda Projects and Hits with your personal API key, build a sourced hook table from Instagram transcripts of your Hits, and draft a niche-specific script from a selected Hit. Onda supplies the data; your agent creates the table and script. A paid Onda plan is required.",
+  "author": {
+    "name": "Onda",
+    "url": "https://getonda.ru"
+  },
+  "homepage": "https://getonda.ru",
+  "license": "MIT-0",
+  "keywords": [
+    "onda",
+    "getonda"
+  ],
+  "repository": "https://github.com/getondaru/onda"
+}

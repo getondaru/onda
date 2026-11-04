@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "onda",
+  "version": "1.0.0",
+  "description": "Connect the Onda MCP server: read your Projects, followed accounts and Hits (publications with far more views than their author has followers) on Instagram, YouTube and TikTok. On your explicit request, run a new collection or get an Instagram transcript with your Onda plan. Needs one native step, hermes mcp add onda --url https://api.getonda.ru/mcp --auth oauth, then a browser sign-in to Onda; no API key. A paid Onda plan is required.",
+  "author": {
+    "name": "Onda",
+    "url": "https://getonda.ru"
+  },
+  "homepage": "https://getonda.ru",
+  "license": "MIT-0",
+  "keywords": [
+    "onda",
+    "getonda",
+    "mcp",
+    "instagram",
+    "youtube",
+    "tiktok"
+  ],
+  "repository": "https://github.com/getondaru/onda"
+}
