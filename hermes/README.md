@@ -12,15 +12,17 @@ commands, scripts or other executable parts.
 
 ```bash
 hermes plugins install onda
-hermes mcp add onda --url https://api.getonda.ru/mcp --auth oauth
+hermes mcp add onda --url https://api.getonda.ru/mcp --auth oauth --connect-timeout 300
 ```
 
 The second command is required: a package's `mcp.json` cannot ask Hermes for
-OAuth, so without it the server answers 401. Hermes then opens the Onda
-sign-in page. Enter your email, then the six-digit code Onda sends you, and
-approve the permissions Hermes asks for: `onda.read` to read, `onda.spend` for
-runs and transcripts. No API key is needed. A paid, active Onda plan is
-required.
+OAuth, so without it the server answers 401. The longer timeout leaves time
+for the emailed code; the default 30 seconds runs out during sign-in.
+
+Hermes then opens the Onda sign-in page. Enter your email, then the six-digit
+code Onda sends you, and approve the permissions Hermes asks for: `onda.read`
+to read, `onda.spend` for runs and transcripts. No API key is needed. A paid,
+active Onda plan is required.
 
 Over SSH the browser cannot reach Hermes's loopback callback: after you
 approve, copy the address the browser fails to open (`http://127.0.0.1:…`) and
